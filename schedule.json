@@ -1,0 +1,10 @@
+[
+    {"day":1,"start":3,"id":"040313006","sec":"5", "name":"PHYSICS LABORATORY I","room":"10800(ตึกนวมิทรชั้น 8)","date":"M 10:00-12:00"},
+    {"day":1,"start":8,"id":"010113030","sec":"1","name":"INTRODUCTION TO ENGINEERING","room":"81-515","date":"T 13:00-14:00"},
+    {"day":2,"start":6,"id":"010123102","sec":"1","name":"PROGRAMMING FUNDAMENTALS","room":"84-COMP-EE","date":"T 13:00-17:00"},
+    {"day":3,"start":2,"id":"040203111","sec":"12","name":"040203111 ENGINEERING MATHEMATICS I","room":"81-430","date":"W 09:00-12:00"},
+    {"day":4,"start":2,"id":"080303601","sec":"5","name":"HUMAN RELATIONS","room":"81-430","date":"H 09:00-12:00"},
+    {"day":4,"start":6,"id":"040313005","sec":"5","name":" PHYSICS I","room":"81-426","date":"H 13:00-16:00"},
+    {"day":5,"start":1,"id":"080303505","sec":"3","name":"TABLE TENNIS","room":"โรงอาหารชั้น 3","date":"F 09:00-12:00"},
+    {"day":5,"start":6,"id":"080103001","sec":"6","name":"ENGLISH I","room":"81-430","date":"F 09:00-12:00"}
+]
