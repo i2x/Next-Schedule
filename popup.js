@@ -1,8 +1,28 @@
-chrome.storage.local.get(["subject_info"], function (result) {
-  if (result.subject_info) {
-    document.getElementById("subject-name").innerText = `${result.subject_info.name}
-    ${result.subject_info.id} S.${result.subject_info.sec}
-    ${result.subject_info.room}
-    ${result.subject_info.date}`;
-  }
+let current_index = 0;
+let schedule = [];
+
+async function getStoredData() {
+    let store = await chrome.storage.local.get(["data"]);
+    schedule = store.data.schedule;
+    current_index = store.data.current_index;
+}
+
+async function render() {
+    let result = schedule[current_index];
+    document.getElementById("subject-name").innerText = `${result.name} ${result.id} S.${result.sec} ${result.room} ${result.date}`;
+}
+
+document.getElementById("btnBack").addEventListener("click", async function () {
+    current_index = Math.max(current_index - 1, 0);
+    await render();
 });
+
+document.getElementById("btnNext").addEventListener("click", async function () {
+    current_index = Math.min(current_index + 1, schedule.length - 1);
+    await render();
+});
+
+(async function init() {
+    await getStoredData();
+    await render();
+})();
